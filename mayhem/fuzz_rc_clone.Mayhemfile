@@ -1,0 +1,7 @@
+project: rclite
+target: fuzz-rc-clone
+
+image: nottirb/rclite:latest
+
+cmds:
+    - cmd: /fuzz_rc_clone

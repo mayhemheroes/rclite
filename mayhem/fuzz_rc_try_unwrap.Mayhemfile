@@ -1,0 +1,7 @@
+project: rclite
+target: fuzz-rc-try-unwrap
+
+image: nottirb/rclite:latest
+
+cmds:
+    - cmd: /fuzz_rc_try_unwrap
