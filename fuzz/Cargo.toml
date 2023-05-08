@@ -1,0 +1,32 @@
+[package]
+name = "fuzz_rclite"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+honggfuzz = "0.5.55"
+
+[dependencies.rclite]
+path = ".."
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "fuzz_arc_clone"
+path = "fuzz_targets/fuzz_arc_clone.rs"
+
+[[bin]]
+name = "fuzz_arc_try_unwrap"
+path = "fuzz_targets/fuzz_arc_try_unwrap.rs"
+
+[[bin]]
+name = "fuzz_rc_clone"
+path = "fuzz_targets/fuzz_rc_clone.rs"
+
+[[bin]]
+name = "fuzz_rc_try_unwrap"
+path = "fuzz_targets/fuzz_rc_try_unwrap.rs"
