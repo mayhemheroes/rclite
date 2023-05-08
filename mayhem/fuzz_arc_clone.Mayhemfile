@@ -1,7 +1,5 @@
 project: rclite
 target: fuzz-arc-clone
 
-image: nottirb/rclite:latest
-
 cmds:
     - cmd: /fuzz_arc_clone

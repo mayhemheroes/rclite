@@ -1,7 +1,5 @@
 project: rclite
 target: fuzz-arc-try-unwrap
 
-image: nottirb/rclite:latest
-
 cmds:
     - cmd: /fuzz_arc_try_unwrap
