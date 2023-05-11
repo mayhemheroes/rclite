@@ -1,0 +1,5 @@
+project: rclite
+target: fuzz-arc-try-unwrap
+
+cmds:
+    - cmd: /fuzz_arc_try_unwrap

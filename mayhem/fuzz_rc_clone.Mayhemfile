@@ -1,0 +1,5 @@
+project: rclite
+target: fuzz-rc-clone
+
+cmds:
+    - cmd: /fuzz_rc_clone
